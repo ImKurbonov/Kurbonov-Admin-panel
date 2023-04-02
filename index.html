@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- SWIPER CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CONTAINER -->
+    <div class="wrapper d-flex justify-content-between">
+      <!-- LEFT PANEL -->
+      <div class="left-panel ps-4 pt-4">
+        <ul class="left-panel-list">
+          <li class="left-panel-item py-4">
+            <img src="img/icon-1.svg" alt="" />
+            <span class="ps-2">Dashboard</span>
+          </li>
+          <li class="left-panel-item py-4">
+            <img src="img/icon-2.svg" alt="" />
+            <span class="ps-1 text-primary">Foydalanuvchilar</span>
+          </li>
+          <li class="left-panel-item py-4">
+            <img src="img/icon-3.svg" alt="" />
+            <span class="ps-2">Random</span>
+          </li>
+          <li class="left-panel-item py-4">
+            <img src="img/icon-4.svg" alt="" />
+            <span class="ps-2">G’oliblar</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- MAIN PANEL -->
+      <div class="main-panel p-5 pt-4">
+        <div class="top-panel mb-3">
+          <!-- TOP NAVBAR -->
+          <nav class="navbar mb-3">
+            <form class="form w-50">
+              <input
+                class="py-3 input form-control me-2 ps-5 px-3"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+          </nav>
+
+          <!-- TOP PANEL LIST -->
+          <ul class="top-panel-list w-100 d-flex justify-content-between">
+            <li
+              class="list-group-horizontal-item d-flex justify-content-center align-items-center pb-3"
+            >
+              Barchasi
+              <span
+                class="badge bg-primary rounded-pill bg-warning text-light ms-3"
+                >20</span
+              >
+            </li>
+            <li
+              class="list-group-horizontal-item d-flex justify-content-between align-items-center pb-3"
+            >
+              Bugun
+              <span class="badge bg-primary rounded-pill bg-secondary ms-3"
+                >48</span
+              >
+            </li>
+            <li
+              class="list-group-horizontal-item d-flex justify-content-between align-items-center pb-3"
+            >
+              Kecha
+              <span class="badge bg-primary rounded-pill bg-secondary ms-3"
+                >38</span
+              >
+            </li>
+          </ul>
+          <div
+            class="top-panel-group d-flex align-items-center justify-content-between"
+          >
+            <span class="text-secondary">Ko’rsatilyotganlar 101-120 gacha</span>
+
+            <div class="buttons-group d-flex">
+              <button
+                class="d-flex align-items-center justify-content-center btn btn-success"
+              >
+                <span>Yangi</span>
+                <img class="ps-2" src="img/plus-icon.svg" alt="" />
+              </button>
+              <button
+                class="px-3 mx-3 d-flex align-items-center justify-content-center btn btn-warning"
+              >
+                <span>O'zgartirish</span>
+                <img class="ps-2" src="img/pen-icon.svg" alt="" />
+              </button>
+              <button
+                class="d-flex align-items-center justify-content-center btn btn-danger"
+              >
+                <span>O'chirish</span>
+                <img class="ps-2" src="img/delete-icon.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- USERS LIST -->
+        <div class="swiper-table swiper-container">
+          <div class="swiper-wrapper">
+            <!-- SLIDE 1 -->
+            <div class="swiper-slide">
+              <table class="table table-striped text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <input type="checkbox" />
+                    </th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Ismi</th>
+                    <th scope="col">Familiyasi</th>
+                    <th scope="col">Telefon raqami</th>
+                    <th scope="col">Sana</th>
+                    <th scope="col">Qurilma nomi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 1 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 2 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 3 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 4 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 5 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 6 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 7 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 8 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 9 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 10 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 11 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 12 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 13 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 14 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="swiper-slide">
+              <table class="table table-striped text-center">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      <input type="checkbox" />
+                    </th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Ismi</th>
+                    <th scope="col">Familiyasi</th>
+                    <th scope="col">Telefon raqami</th>
+                    <th scope="col">Sana</th>
+                    <th scope="col">Qurilma nomi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- 1 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 2 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 3 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 4 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 5 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 6 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 7 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 8 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 9 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 10 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 11 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 12 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 13 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                  <!-- 14 -->
+                  <tr>
+                    <th scope="row">
+                      <input type="checkbox" />
+                    </th>
+                    <td>235788</td>
+                    <td>Abdumalik</td>
+                    <td>Qurbonov</td>
+                    <td>(+998) 91 396 95 15</td>
+                    <td>19.08.1996</td>
+                    <td>Samsung Galaxy A50</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div class="swiper-next-btn"></div>
+          <div class="swiper-prev-btn"></div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".swiper-table", {
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+          pageUpDown: true,
+        },
+      });
+    </script>
+
+    <!-- Main Js -->
+    <script src="index.js"></script>
+  </body>
+</html>
