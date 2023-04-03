@@ -5,9 +5,10 @@
 }
 
 body {
-    background-color: #E5E5E5;;
+    background-color: #E5E5E5;
     min-height: 100vh;
 }
+
 
 .wrapper {
     max-width: 1440px;
@@ -17,10 +18,9 @@ body {
 }
 
 .left-panel {
+    width: 200px;
     background-color: #fff;
     border-radius: 12px 0 0 12px;
-    max-width: 234px;
-    width: 100%;
     position: relative;
 }
 
@@ -40,10 +40,18 @@ body {
 }
 
 .main-panel {
+    width: 1400px;
     background-color: #F7F8FA;
-    max-width: 1200px;
-    width: 100%;
 }
+
+.top-panel {
+    width: 100%;
+    background: #F7F8FA;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+}
+
 
 .form {
     position: relative;
@@ -72,6 +80,11 @@ body {
     right: 5%;
     transform: translateY(-50%);
 }
+/* thead{
+    width: 100%;
+    position: sticky;
+    top: 5px;
+} */
 
 .input {
     border-radius: 40px;
